@@ -31,12 +31,12 @@ void setup() {
   digitalWrite(RED_PIN, LOW);
   digitalWrite(GREEN_PIN, LOW);
 
-  sm.addState(STATE_RED, STATE_REDYELLOW);
-  sm.addState(STATE_REDYELLOW, STATE_GREEN);
-  sm.addState(STATE_GREEN, STATE_YELLOW);
-  sm.addState(STATE_YELLOW, STATE_RED);
-  sm.addState(STATE_YELLOW2, STATE_NOLIGHT);
-  sm.addState(STATE_NOLIGHT, STATE_YELLOW2);
+  sm.addTransition(STATE_RED, STATE_REDYELLOW);
+  sm.addTransition(STATE_REDYELLOW, STATE_GREEN);
+  sm.addTransition(STATE_GREEN, STATE_YELLOW);
+  sm.addTransition(STATE_YELLOW, STATE_RED);
+  sm.addTransition(STATE_YELLOW2, STATE_NOLIGHT);
+  sm.addTransition(STATE_NOLIGHT, STATE_YELLOW2);
 
   automaticStateDurations[STATE_RED] = 5000;
   automaticStateDurations[STATE_REDYELLOW] = 1500;

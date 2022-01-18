@@ -4,7 +4,7 @@ StateMachine::StateMachine(int initState) {
   currentState = initState;
 }
 
-void StateMachine::addState(int id, int nextStateId) {
+void StateMachine::addTransition(int id, int nextStateId) {
   states[id] = nextStateId;
 }
 

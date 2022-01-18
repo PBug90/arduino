@@ -28,4 +28,4 @@ Press button for:
 
 - <2s to trigger a manual state transition or enter manual mode
 - \>2s and <4s to enter automatic mode
-- \>5s to enter yellow flashing mode
+- \>4s to enter yellow flashing mode
